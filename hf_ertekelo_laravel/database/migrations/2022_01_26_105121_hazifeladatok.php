@@ -13,7 +13,8 @@ class Hazifeladatok extends Migration
      */
     public function up()
     {
-        Schema::create('hazifeladatok', function (Blueprint $table) {
+        Schema::create('hazifeladatoks', function (Blueprint $table) {
+            $table->id();
             $table->string('tanulo');
             $table->string('beadott_feladat');
             $table->string('link');
@@ -28,6 +29,6 @@ class Hazifeladatok extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('hazifeladatok');
+        Schema::dropIfExists('hazifeladatoks');
     }
 }
