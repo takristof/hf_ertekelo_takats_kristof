@@ -18,6 +18,8 @@ class Hazifeladatok extends Migration
             $table->string('tanulo');
             $table->string('beadott_feladat');
             $table->string('link');
+            $table->string('szoveges_ertekeles')->nullable();
+            $table->integer('pont')->nullable();
             $table->timestamps();
         });
     }
